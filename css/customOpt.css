@@ -1,0 +1,26 @@
+.btn {
+    width: fit-content;
+    margin-left: 40%;
+}
+
+.customBackground{
+    background: repeating-linear-gradient(0deg, rgb(110, 110, 110), rgb(195, 195, 195), rgb(226, 226, 226));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#prev{
+    margin-right: 20px;
+}
+
+.customBtnGroup{
+    margin-top: 15px;
+}
+
+.customTitle{
+    margin-bottom: 30px;
+}
+
+#question{
+    margin-bottom: 20px;
+}
