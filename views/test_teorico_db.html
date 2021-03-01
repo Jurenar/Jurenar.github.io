@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/global.css">
+        <title id="title">Test</title>
+    </head>
+    <body class="custom-background">
+        <div id="bodyTest">
+
+            <header class="custom-title">
+                <div class="container">
+                    <table class="table custom-background-45-rev custom-font-150">
+                        <tbody>
+                            <tr>
+                                <td>Correct:</td>
+                                <td id="correctPoint" class="custom-col">0</td>
+                                <td>Partial:</td>
+                                <td id="partialPoint">0</td>
+                                <td>Wrong:</td>
+                                <td id="wrongPoint">0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </header>
+
+            <main>
+                <div class="text-center">
+                    <div class="container">
+                        <table id="tableTest" class="custom-background-45-rev custom-table">
+                            <thead id="testHead" class="custom-table-head">
+                            </thead>
+
+                            <tbody id="testBody" class="custom-table-body">
+                            </tbody>
+                        </table>
+                        <div class="separator"></div>
+                        <table class="table custom-background-45-rev">
+                            <tbody>
+                                <tr>
+                                    <td class="custom-td"><button type="button" id="prev" class="btn btn-primary table-btn" onclick="getPrev('theory', t)" hidden>Previous</button></td>
+                                    <td class="custom-td"><button type="button" id="validate" class="btn btn-warning table-btn" onclick="validate('theory', t)" hidden>Validate</button></td>
+                                    <td class="custom-td"><button type="button" id="next" class="btn btn-primary table-btn" onclick="getNext('theory', t)">Start</button></td>
+                                    <td class="custom-td"><button type="button" id="restart" class="btn btn-danger table-btn" onclick="restart('theory', t)" hidden>Restart</button></td>
+                                    <td class="custom-td"><button type="button" id="result" class="btn btn-secondary table-btn" onclick="result(results)" hidden>Show Results</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="progress">
+                            <div class="progress-bar custom-progress" id="progress_count"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+        </div>
+        
+        
+        <div id="bodyResult" hidden>
+            <div>
+                <div class="text-center custom-title container">
+                    <button type="button" class="btn btn-primary custom-font-25 btn-test" onclick="returnToTest('theory', t)">Return to test</button>
+                </div>
+                <table id="tableResult" class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Posizione</th>
+                            <th>Domanda</th>
+                            <th>Tempo impiegato</th>
+                            <th>Corrette</th>
+                            <th>Parziali</th>
+                            <th>Sbagliate</th>
+                            <th>Risposta corretta 1</th>
+                            <th>Risposta corretta 2</th>
+                            <th>Risposta corretta 3</th>
+                            <th>Risposta corretta 4</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody id="resultBody">
+                    </tbody>
+    
+                    <tfoot id="resultFoot">
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+    <script src="../js/global.js"></script>
+    <script src="../js/control.js"></script>
+    <script src="../js/button_func.js"></script>
+    <script src="../js/logic_func.js"></script>
+    <script src="../js/global_theory/button_theory.js"></script>
+    <script src="../js/global_theory/control_theory.js"></script>
+    <script src="../js/db/question_db_theory.js"></script>
+    <script src="../js/db/db_settings.js"></script>
+    <script src="../js/global_theory/theory_settings.js"></script>
+    
+</html>

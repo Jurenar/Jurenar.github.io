@@ -1,0 +1,80 @@
+.custom-background{
+    background: repeating-linear-gradient(0deg, rgb(70, 70, 70), rgb(110, 110, 110),
+    rgb(170, 170, 170), rgb(220, 220, 220), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.custom-background-45-rev{
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: repeating-radial-gradient(circle at center, rgb(220, 220, 220),
+     rgb(180, 180, 180), rgb(140, 140, 140));
+}
+
+.custom-progress{
+    background: repeating-linear-gradient(45deg, rgb(10, 0, 80), rgb(15, 0, 140),
+    rgb(15, 0, 200), rgb(15, 0, 255), rgb(15, 70, 255));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.custom-table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+.custom-table-head{
+    color: darkcyan;
+    font-size: 175%;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.custom-table-body{
+    color: black;
+    font-size: 150%;
+    border-width: 2px;
+    border-style: solid;
+    border-color:black;
+}
+
+.custom-table-data-s{
+    width: 10%;
+}
+
+.custom-table-data-b{
+    width: 90%;
+}
+
+.custom-font-150{
+    font-size: 150%;
+}
+
+.custom-title{
+    margin-top: 0.5%;
+    margin-left: 0%;
+    padding: 1.5%;
+}
+
+.table-border-cell{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.table-btn {
+    width: 100%;
+    font-size: 150%;
+}
+
+.separator{
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.custom-td{
+    width: 20%;
+}
